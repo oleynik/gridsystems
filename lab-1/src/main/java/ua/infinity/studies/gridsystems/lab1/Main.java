@@ -25,8 +25,7 @@ public class Main {
      * */
     public static void main(String[] args) {
         IntegerBinaryTransformer transformer = new IntegerBinaryTransformer();
-        for (int i = -8; i < 8; i++) {
-            int decimal = i;
+        for (int decimal = -8; decimal < 8; decimal++) {
             String binary = transformer.transform(decimal);
             logger.info("Dec={}, Bin={}", decimal, binary);
         }
